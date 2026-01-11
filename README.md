@@ -11,7 +11,7 @@ A Windows application to broadcast iBeacon signals for testing and development.
 
 ## Download
 
-Download the latest version from [Releases](https://github.com/sagarchaulagai/ibeacon-simulator-windows/releases)
+Download the latest version from [Releases](https://github.com/RishiRaj-SoftwareEngineer/iBeacon-Simulator/releases)
 
 ##  Usage
 
