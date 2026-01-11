@@ -38,6 +38,6 @@ Built with:
 
 ### Building from Source
 ```bash
-git clone https://github.com/sagarchaulagai/ibeacon-simulator-windows.git
+git clone https://github.com/RishiRaj-SoftwareEngineer/iBeacon-Simulator.git
 cd iBeacon_Simulator
 dotnet publish -c Release -r win-x64 --self-contained true
