@@ -1,0 +1,51 @@
+<Window
+    x:Class="IBeaconSimulator.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:IBeaconSimulator"
+    Title="iBeacon Simulator">
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <ScrollViewer>
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="12" Margin="20">
+                <TextBlock Text="iBeacon Simulator" FontSize="28" HorizontalAlignment="Center" Margin="0,0,0,20"/>
+
+                <!-- UUID Input -->
+                <TextBlock Text="UUID:" FontWeight="SemiBold"/>
+                <TextBox x:Name="UuidTextBox" 
+                         Text="E2C56DB5-DFFB-48D2-B060-D0F5A71096E0" 
+                         Width="350"
+                         PlaceholderText="Enter UUID"/>
+
+                <!-- Major Input -->
+                <TextBlock Text="Major:" FontWeight="SemiBold" Margin="0,8,0,0"/>
+                <TextBox x:Name="MajorTextBox" 
+                         Text="1" 
+                         Width="350"
+                         PlaceholderText="Enter Major (0-65535)"/>
+
+                <!-- Minor Input -->
+                <TextBlock Text="Minor:" FontWeight="SemiBold" Margin="0,8,0,0"/>
+                <TextBox x:Name="MinorTextBox" 
+                         Text="1" 
+                         Width="350"
+                         PlaceholderText="Enter Minor (0-65535)"/>
+
+                <!-- Identifier Input -->
+                <TextBlock Text="Identifier:" FontWeight="SemiBold" Margin="0,8,0,0"/>
+                <TextBox x:Name="IdentifierTextBox" 
+                         Text="com.example.beacon" 
+                         Width="350"
+                         PlaceholderText="Enter Identifier"/>
+
+                <!-- Buttons -->
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Spacing="12" Margin="0,20,0,0">
+                    <Button x:Name="StartButton" Content="Start Beacon" Click="StartButton_Click" Width="120"/>
+                    <Button x:Name="StopButton" Content="Stop Beacon" Click="StopButton_Click" IsEnabled="False" Width="120"/>
+                </StackPanel>
+
+                <!-- Status -->
+                <TextBlock x:Name="StatusText" Text="Status: Idle" HorizontalAlignment="Center" FontSize="16" Margin="0,12,0,0"/>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Window>

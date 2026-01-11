@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "iBeacon_Simulator (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "iBeacon_Simulator (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
